@@ -32,4 +32,17 @@ class UserTest extends TestCase
         $this->assertNotNull($json);
         $this->assertEquals('okay', $json->comment);
     }
+
+    public function testPostJson()
+    {
+        $response = $this->post('/users/json');
+
+        $response->assertStatus(200);
+
+        $content = $response->getContent();
+        $json = json_decode($content);
+
+        $this->assertNotNull($json);
+        $this->assertEquals('okay', $json->comment);
+    }
 }
