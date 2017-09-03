@@ -16,7 +16,7 @@ class UserTest extends TestCase
     public function testTest()
     {
         $response = $this->get('/users/test');
-        
         $response->assertStatus(200);
+        $this->assertEquals('test', $response->getContent());
     }
 }
