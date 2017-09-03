@@ -19,4 +19,17 @@ class UserTest extends TestCase
         $response->assertStatus(200);
         $this->assertEquals('test', $response->getContent());
     }
+
+    public function testGetJson()
+    {
+        $response = $this->get('/users/json');
+
+        $response->assertStatus(200);
+
+        $content = $response->getContent();
+        $json = json_decode($content);
+
+        $this->assertNotNull($json);
+        $this->assertEquals('okay', $json->comment);
+    }
 }
