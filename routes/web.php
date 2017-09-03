@@ -16,3 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('/users/test', 'UsersController@test');
+
+Route::get('/users/json', 'UsersController@json');
+
+Route::post('/users/json', 'UsersController@json');
