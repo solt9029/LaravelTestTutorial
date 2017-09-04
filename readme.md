@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/solt9029/LaravelTestTutorial.svg?branch=master)](https://travis-ci.org/solt9029/LaravelTestTutorial)
+
 # Purpose
 
 To check how to use phpunit in laravel
