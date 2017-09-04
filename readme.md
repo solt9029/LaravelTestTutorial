@@ -26,3 +26,7 @@ If you want to see web page with browser on localhost:8080
 ```
 php artisan serve
 ```
+
+# References
+
+- https://gist.github.com/gilbitron/5cac0ac5fa07e9b354ac (This page was really helpful for me to understand how to use travis ci in laravel. Thank you.)
